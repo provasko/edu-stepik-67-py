@@ -2,6 +2,9 @@
 # вещественные числа - float
 # логические - bool
 # строки - str
+from re import M
+
+
 print(int(2.3))
 print(float(10))
 
@@ -32,3 +35,10 @@ z = int(input())
 chas = z // 60
 minut = z % 60
 print(chas, minut)
+
+# то же задание, но спать ложится не в полночь а h:m
+h = int(input())
+m = int(input())
+absol = h*60 + m + z
+chas2 = absol // 60
+minut2 = absol % 60

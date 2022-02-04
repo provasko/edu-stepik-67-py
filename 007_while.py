@@ -36,10 +36,10 @@ while len(stars) <= n:
     print(stars)
     stars += '*'
 
-# Вычислить сумму целых чисел от х до у
+# Вычислить сумму целых чисел от 10 до 20
 s = 0
-i = x
-while i <= y:
+i = 10
+while i <= 20:
     s += i
     i += 1
 print(s)

@@ -12,3 +12,27 @@ for j in range(10):
 # Вывести кввадрат из звездочек 5 на 5
 for k in range(5):
     print('*' * 5)
+
+# Вложенный цикл - сделать прямоугольник m на l
+m = int(input())
+n = int(input())
+for i in range(m):
+    for j in range(n):
+        print('*', end='')
+    print()
+
+# создать таблицу Пифагора для отрезков [a; b] [c; d]
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+print(' ', end='')
+for i in range(c, d + 1):
+    print('\t' + str(i), end='')
+print()
+for j in range(a, b + 1):
+    print(str(j), end='')
+    for k in range(c, d + 1):
+        print('\t' + str(j * k), end='')
+    print()

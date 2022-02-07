@@ -36,3 +36,22 @@ for j in range(a, b + 1):
     for k in range(c, d + 1):
         print('\t' + str(j * k), end='')
     print()
+
+# вывести сумму всех нечетных чисел от а до б
+
+v, w = input().split()
+v = int(v)
+w = int(w)
+ss = 0
+for i in range(v, w + 1):
+    if i % 2 == 1:
+        ss += i
+print(ss)
+
+# второй вариант - идти сразу по нечетным, чтобы не перебирать их внутри цикла
+
+if v % 2 == 0:
+    v += 1
+for i in range(v, w + 1, 2):
+    ss += 1
+print(ss)

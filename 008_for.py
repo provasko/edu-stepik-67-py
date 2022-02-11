@@ -55,3 +55,25 @@ if v % 2 == 0:
 for i in range(v, w + 1, 2):
     ss += 1
 print(ss)
+
+# еще вариант записи нескольких переменных
+
+o, p, r = (int(i) for i in input().split())
+sss = 0
+if o % 2 == 0:
+    o += 1
+for i in range(o, p + 1, 2):
+    sss += i
+
+# Напишите программу, которая считывает с клавиатуры два числа, считает и выводит на консоль
+# среднее арифметическое всех чисел из отрезка [a b], которые кратны числу 3.
+
+t, u = (int(i) for i in input().split())
+su = 0
+kol = 0
+while t % 3 != 0:
+    t += 1
+for i in range(t, u + 1, 3):
+    su += i
+    kol += 1
+print(su / kol)

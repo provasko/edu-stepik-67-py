@@ -1,0 +1,3 @@
+genome = "ATGG"
+
+print(ge)

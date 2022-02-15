@@ -38,3 +38,12 @@ s.count(p)  # 1 (количество вхождений)
 s.find(p)  # 3 (индекс первого вхождения)
 s.find("A")  # -1 (не встречается)
 s.replace("c", "T")  # "aTGTT"
+
+# Последовательные методы
+o = "agTtcAGtc"
+print(o.upper().count("gt".upper()))
+
+cg = input()
+cg_count = (cg.count("c") + cg.count("g"))/len(cg)
+
+# Slicing

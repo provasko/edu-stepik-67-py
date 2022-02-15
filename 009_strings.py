@@ -47,3 +47,10 @@ cg = input()
 cg_count = (cg.count("c") + cg.count("g"))/len(cg)
 
 # Slicing
+dna = "ATTCGGAGCT"
+print(dna[1] + " - JUST 2ND")
+print(dna[1:4] + " - FROM 2ND TO 5TH")
+print("TO 5 TH: " + dna[:4] + " , AND FROM 5TH: " + dna[4:])
+print(dna[-4:] + " - FRMOM 4TH AT THE END")
+print(dna[1:-1] + " - FROM 2ND TO 2ND FROM THE END OR " + dna[1:-1:2] + " - THE SAME BUT WITH STEP 2")
+print(dna[::-1] + " - MIRROR")

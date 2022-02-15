@@ -64,3 +64,19 @@ for i in range(len(palindrom) // 2 + 1):
         break
     else:
         print("YES")
+
+# FAILED!!! Correct:
+
+pali = input()
+i = 0
+j = len(pali) - 1
+is_pali = True
+while i < j:
+    if pali[i] != pali[j]:
+        is_pali = False
+    i += 1
+    j -= 1
+if is_pali:
+    print("YES")
+else:
+    print("NO")

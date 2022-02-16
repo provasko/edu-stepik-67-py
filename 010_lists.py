@@ -8,7 +8,7 @@ print(students[1])
 
 print(len(students))
 print(students[:2])  # up to 2nd (number 1)
-print(students[::-1])  # mirror
+print(students[::-1])  # reverse
 
 # Operations
 teachers = ["Vova", "Alex"]
@@ -85,3 +85,8 @@ ind = students.index("Olga")
 print(sorted(students))  # without changing
 print(students)
 print(students.sort())  # with changing
+
+# Reversing
+print(students.reverse())  # with changing
+print(reversed(students))  # without changing
+students[::-1]

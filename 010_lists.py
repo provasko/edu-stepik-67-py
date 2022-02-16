@@ -7,8 +7,8 @@ print(students[1])
 # Access to elements
 
 print(len(students))
-print(students[:2]) # up to 2nd (number 1)
-print(students[::-1]) # mirror
+print(students[:2])  # up to 2nd (number 1)
+print(students[::-1])  # mirror
 
 # Operations
 teachers = ["Vova", "Alex"]
@@ -23,7 +23,7 @@ students.insert(2, "Vsevolod")
 print(students)
 
 
-students = [] # empty
+students = []  # empty
 ''' From python.org:
 s[i] = x
 item i of s is replaced by x
@@ -60,3 +60,28 @@ remove the first item from s where s[i] is equal to x
 s.reverse()
 reverses the items of s in place
 '''
+
+students = ['Ivan', 'Masha', 'Sasha']
+students += ['Olga']
+students += 'Olga'
+print(students)
+
+# Remove
+
+students.remove("Sasha")
+del students[3:-2]
+print(students)
+
+# Search
+
+if "Ivan" in students:
+    print("Got you")
+if "O" not in students:
+    print("O deleted successfully")
+
+ind = students.index("Olga")
+
+# Sorting
+print(sorted(students))  # without changing
+print(students)
+print(students.sort())  # with changing

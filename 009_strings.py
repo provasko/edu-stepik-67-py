@@ -96,3 +96,18 @@ for i in range(1, len(dnk)):
         count = 1
 
 # FAIL Dont print last letter
+
+# Correct:
+x = input()
+i = 0
+s = 1
+
+for i in range(len(x) - 1):
+    if x[i] == x[i + 1]:
+        s += 1
+        i += 1
+    else:
+        print(x[i] + str(s), end="")
+        s = 1
+        i += 1
+print(x[i] + str(s))

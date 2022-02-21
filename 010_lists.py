@@ -90,3 +90,17 @@ print(students.sort())  # with changing
 print(students.reverse())  # with changing
 print(reversed(students))  # without changing
 students[::-1]
+
+# List generating
+a = [0] * 5
+b = [0 for i in range(5)]
+c = [i * i for i in range(5)]
+d = [int(i) for i in input().split()]
+
+# Вывести сумму чисел из списка
+spis = [int(i) for i in input().split()]
+summa = 0
+for i in range(len(spis)):
+    summa += spis[i]
+print(summa)
+

@@ -104,3 +104,22 @@ for i in range(len(spis)):
     summa += spis[i]
 print(summa)
 
+# Напишите программу, на вход которой подаётся список чисел одной строкой.
+# Программа должна для каждого элемента этого списка вывести сумму двух его соседей.
+# Для элементов списка, являющихся крайними, одним из соседей считается элемент,
+# находящий на противоположном конце этого списка.
+
+ryad = [int(i) for i in input().split()]
+x = len(ryad) - 1
+ryad2 = [0] * len(ryad)
+
+for i in range(x+1):
+    if i == 0:
+        ryad2[i] = ryad[i+1] + ryad[x]
+    elif i == x:
+        ryad2[i] = ryad[i-1] + ryad[0]
+    else:
+        ryad2[i] = ryad[i-1] + ryad[i+1]
+
+for j in ryad2:
+    print(j, end=" ")

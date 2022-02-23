@@ -123,3 +123,12 @@ for i in range(x+1):
 
 for j in ryad2:
     print(j, end=" ")
+
+# Напишите программу, которая принимает на вход список чисел в одной строке и выводит на экран
+# в одну строку значения, которые встречаются в нём более одного раза.
+
+chisla = [int(i) for i in input().split()]
+gotov = chisla.sort()
+for i in range(len(gotov)):
+    if gotov[i+1] == gotov[i]:
+        print(gotov[i], end=" ")

@@ -128,7 +128,7 @@ for j in ryad2:
 # в одну строку значения, которые встречаются в нём более одного раза.
 
 chisla = [int(i) for i in input().split()]
-gotov = chisla.sort()
-for i in range(len(gotov)):
-    if gotov[i+1] == gotov[i]:
-        print(gotov[i], end=" ")
+chisla.sort()
+for i in range(1, len(chisla)):
+    if chisla[i-1] == chisla[i]:
+        print(chisla[i], end=" ")

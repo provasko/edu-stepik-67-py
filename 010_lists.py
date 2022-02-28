@@ -129,6 +129,12 @@ for j in ryad2:
 
 chisla = [int(i) for i in input().split()]
 chisla.sort()
-for i in range(1, len(chisla)):
-    if chisla[i-1] == chisla[i]:
-        print(chisla[i], end=" ")
+if len(chisla) == 1:
+    # nothing to print
+elif len(chisla) == 2:
+    if chisla[1] == chisla[0]:
+        print(chisla[0])
+else:  
+    for i in range(1, len(chisla)):
+        if chisla[i-1] == chisla[i]:
+            print(chisla[i], end=" ")

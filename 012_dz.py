@@ -37,6 +37,8 @@ for i in range(n):
 # пока сумма введённых чисел не будет равна 0 и сразу после этого выводит сумму квадратов всех считанных чисел.
 
 u = int(input())
+che = 0
+summ = 0
 che += u
 summ += u ^ 2
 
@@ -45,3 +47,5 @@ while che != 0:
     che += u
     summ += u ^ 2
 print(summ)
+
+# alternative

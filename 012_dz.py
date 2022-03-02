@@ -40,12 +40,22 @@ u = int(input())
 che = 0
 summ = 0
 che += u
-summ += u ^ 2
+summ += u * u
 
 while che != 0:
     u = int(input())
     che += u
-    summ += u ^ 2
+    summ += u * u
 print(summ)
 
 # alternative
+a = int(input())
+check = 0
+summ = 0
+while a != 'z':
+    summ += a * a
+    check += a
+    a = int(input())
+    if check == 0:
+        print(summ)
+        break

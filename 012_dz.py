@@ -69,6 +69,9 @@ while a != 'z':
 spis = [int(i) for i in input().split()]
 b = int(input())
 nomera = 0
-for j in spis:
-    if j == b:
-        print()
+for j in range(len(spis)):
+    if spis[j] == b:
+        print(j, end=" ")
+        nomera += 1
+if nomera == 0:
+    print("Отсутствует")

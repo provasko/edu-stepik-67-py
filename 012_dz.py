@@ -84,13 +84,16 @@ if nomera == 0:
 c = int(input())
 cifra = 1
 abscounter = 1
+
 for k in range(c):
+
     counter = 1
     for l in range(cifra):
-        print(cifra, end=" ")
+        if abscounter <= c:
+            print(cifra, end=" ")
         counter += 1
         if abscounter == c:
-            stop
+            break
         else:
             abscounter += 1
     cifra += 1

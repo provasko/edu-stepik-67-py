@@ -84,17 +84,22 @@ if nomera == 0:
 c = int(input())
 cifra = 1
 abscounter = 1
-
+listtotal = []
 for k in range(c):
 
     counter = 1
     for l in range(cifra):
         if abscounter <= c:
-            print(cifra, end=" ")
+
+            listtotal.append(cifra)
         counter += 1
         if abscounter == c:
             break
         else:
             abscounter += 1
     cifra += 1
-#undone
+
+for m in range(c):
+    print(listtotal[m], end=" ")
+
+# DONE

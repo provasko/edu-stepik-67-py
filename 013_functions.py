@@ -51,3 +51,14 @@ def my_range(start, stop, step=1):
 print(my_range(2, 5))
 print(my_range(2, 15, 3))
 print(my_range(15, 2, -3))
+
+# Локальные переменные
+
+
+def init_values():
+    a = 100
+    b = 200
+
+
+init_values()
+# print(a + b) - вызовет ошибку, так как переменные не объявлены

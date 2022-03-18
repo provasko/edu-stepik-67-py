@@ -62,3 +62,23 @@ def init_values():
 
 init_values()
 # print(a + b) - вызовет ошибку, так как переменные не объявлены
+
+# Изменение локальных переменных
+
+
+def init_values():
+    a = 100
+
+
+a = 0
+init_values()
+print(a)
+
+
+def init_values(a):
+    a = 100
+
+
+b = 100
+init_values(b)
+print(b)

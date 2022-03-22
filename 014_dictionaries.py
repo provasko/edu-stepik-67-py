@@ -8,6 +8,9 @@ print(basket)  # выводит в другом порядке без повто
 "orange" in basket  # True
 "cucumber" in basket  # False
 
+for fruit in basket:
+    print(fruit)
+
 basket.add("kiwi")  # Добавляет элемент
 
 basket.remove("orange")  # Удаляет элемент, но если такого нет - ошибка!

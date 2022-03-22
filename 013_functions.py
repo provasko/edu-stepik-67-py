@@ -144,9 +144,9 @@ def f(x):
 # все нечётные значения, а чётные нацело делит на два.
 
 
-def modify_list(lst):
-    for i in lst:
+def modify_list(l):
+    for i in l:
         if i // 2 != 0:
-            del lst[i]
+            del l[i]
         else:
-            lst[i] = lst[i]/2
+            l[i] = l[i]/2

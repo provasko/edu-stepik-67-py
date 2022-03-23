@@ -61,3 +61,9 @@ for value in nabor.values():
     print(value//2, end=" ")
 for key, value in nabor.items():
     print(key, value, end="; ")
+
+# В значениях (НЕ ключах) могут храниться списки
+
+crnagora = {"Bar": ["Bjelisi", "Susanj"], "Budva": [
+    "Lazi", "Maine"], "Podgorica": "Konik"}
+print(crnagora["Budva"])

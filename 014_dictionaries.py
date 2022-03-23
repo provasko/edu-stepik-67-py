@@ -51,4 +51,13 @@ del autonomer["e001kx77"]
 
 # Перебор элементов списка
 
-nabor = {"C":14, "A": 12, "T": 9}
+nabor = {"C": 14, "A": 12, "T": 9, "G": 18}
+
+for key in nabor:
+    print(key, end=" ")
+for key in nabor.keys():
+    print(key*2, end=" ")
+for value in nabor.values():
+    print(value//2, end=" ")
+for key, value in nabor.items():
+    print(key, value, end="; ")

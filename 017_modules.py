@@ -9,3 +9,13 @@
 import my_module
 my_module.foo()
 
+# Импорт from
+
+from my_module import foo
+foo()
+
+from my module import *
+foo()
+
+from my_module import foo as my_foo
+my_foo()

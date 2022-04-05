@@ -19,3 +19,5 @@ foo()
 
 from my_module import foo as my_foo
 my_foo()
+
+# стандартные модули docs.python.org/3/library/

@@ -49,3 +49,6 @@ subprocess.call(["python", "-h"])
 # Пример работы программы:
 # python3 my_solution.py arg1 arg2
 # arg1 arg2
+
+
+# Установка новых модулей

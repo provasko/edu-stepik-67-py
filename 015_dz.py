@@ -4,17 +4,18 @@
 # Если и ключа 2∗key нет, то нужно добавить ключ 2∗key в словарь и сопоставить ему список из переданного
 # элемента [value].
 
-def update_dictionary(d, key, value):
-    a = key
-    b = value
-    for key in d.keys():
-        if key == a:
-            d[key].append(b)
-        else:
-            if 2*a in d:
-                d[2*a].append(b)
+def update_dictionary(d, k, v):
+    if len(d) == 0:
+        d[2*k] = [v]
+    else:
+        for key in d.keys():
+            if key == k:
+                d[key] += [v]
             else:
-                d[2*a] = b
+                if key == 2*k:
+                    d[key] += [v]
+                else:
+                    d[2*k] = [v]
 
 
 # Когда Антон прочитал «Войну и мир», ему стало интересно, сколько слов и в каком количестве

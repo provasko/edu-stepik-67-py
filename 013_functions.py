@@ -143,10 +143,17 @@ def f(x):
 # Напишите функцию modify_list(l), которая принимает на вход список целых чисел, удаляет из него
 # все нечётные значения, а чётные нацело делит на два.
 
+l = [1, 2, 3, 4, 5, 6]
+
+
 
 def modify_list(l):
-    for i in l:
-        if i // 2 != 0:
-            del l[i]
+    a = len(l)
+    for i in l[::-1]:
+        if i % 2 != 0:
+            del l[a-1]
         else:
-            l[i] = l[i]/2
+            l[a-1] = l[a-1]//2
+        a -= 1    
+print(modify_list(l))
+print(l)
